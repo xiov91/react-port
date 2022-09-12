@@ -1,13 +1,228 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #BBEC8F;
+  height: 100%;
+  background-attachment: fixed;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+  color: #159C00;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* .list-container li {
+  bottom-margin: 5px;
+} */
+
+.text-container {
+  display: Flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {   
+  width: 600px;
+  text-align: justify;
+  margin: -10px;
+}
+
+.header-container a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: 'Erica One', cursive;
+  font-size: 80px;
+  margin-bottom: 31px;
+}
+
+.subtitle {
+  font-family: 'Erica One', cursive;
+  font-size: 40px;
+  margin-top: -75px;
+}
+
+.flex-container {
+  background: #82E629;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.navbar {
+  background: #159C00;
+  color: #82E629;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 35px;
+}
+
+.headerimage {
+  max-height: 250px;
+  margin-left: 10px;    
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.divider {
+  background: #159C00;
+  color: #82E629;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.port-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.port-img {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+  width: 50%;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  
+  background-color: #159C00;
+  color: #DCE9D1;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.port-img:hover {
+  opacity: 0.5;
+}
+
+.port-img:hover .middle {
+  opacity: 1;
+}
+
+/* unvisited link */
+a:link {
+  color: #47D630;
+}
+
+/* visited link */
+a:visited {
+  color: #0D6200;
+}
+
+/* mouse over link */
+a:hover {
+  color: #68DE56;
+}
+
+/* selected link */
+a:active {
+  color: #118000;
+}
+
+/* From Button */
+
+button {
+  margin: 50px;
+  font-family: inherit;
+}
+
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(188, 237, 136, 1);
+}
+
+.fill::after {
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+/* From the Cards */
+
+.card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: 10px;
+}
+
+.horizontal {
+  max-width: 400px;
+}
+
+.container {
+  padding-top: 60px;
+}
+.list-group {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.list-group h4 {
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 6px; 
+  margin-bottom: 10px;
+}
+
+.list-group p {
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.list-group-item {
+  display: block;
+  padding: 10px 25px 10px 15px;
+  border: 1px solid rgba(221, 221, 221, 0.25);
 }
